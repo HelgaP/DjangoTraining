@@ -1,0 +1,22 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            {{ songName }}
+        </title>
+        <link href="{% static 'song/style.css' %}" rel="stylesheet">
+    </head>
+    <body>
+        <h1>{{ songName }} by John Lennon</h1>
+        <ul>
+            {% for line in text %}
+            <li>
+                {{ line }}
+            </li>
+            {% endfor %}
+        </ui>
+        </ul>
+    </body>
+</html>
